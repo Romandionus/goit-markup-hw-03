@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="header">
+        <a class="homepage link" href="./index.html">Web<span class="homepage-dark">Studio</span></a>
+        <nav>
+            <!--кнопки навигации-->
+            <ul class="list">
+                <li><a class="nav-link link" href="./index.html">Студия</a></li>
+                <li><a class="nav-link link current" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="nav-link link" href="/контакты">Контакты</a></li>
+            </ul>
+        </nav>
+        <!--почта и телефон-->
+        <ul class="list">
+            <li><a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-link link" href="tel:+38096-111-11-11">+38 96 111 11 11</a></li>
+        </ul>
+    </header>
+    <!-- основной контентр -->
+    <main>
+        <!-- фильтры портфолио -->
+        <h2 class="visually-hidden">Скрытый заголовок</h2>
+        <section class="portfolio-main-content">
+            <ul class="list">
+                <li><button class="btn" type="button">Все</button></li>
+                <li><button class="btn" type="button">Веб-сайты</button></li>
+                <li><button class="btn" type="button">Приложения</button></li>
+                <li><button class="btn" type="button">Дизайн</button></li>
+                <li><button class="btn" type="button">Маркетинг</button></li>
+            </ul>
+            <ul class="list">
+                <li> <img src="./images/tehnokryak.jpg" width="370" height="294" alt="Технокряк">
+                    <h3 class="portfolio-content">Технокряк</h3>
+                    <p class="portfolio-content-description">Веб-сайт</p>
+                </li>
+                <li> <img src="./images/neworlean.jpg" width="370" height="294" alt="Постер New Orlean vs Golden Star">
+                    <h3 class="portfolio-content">Постер<span lang="en">New Orlean vs Golden Star</span></h3>
+                    <p class="portfolio-content-description">Дизайн</p>
+                </li>
+                <li> <img src="./images/seafood.jpg" width="370" height="294" alt="Ресторан">
+                    <h3 class="portfolio-content">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="portfolio-content-description">Приложение</p>
+                </li>
+                <li> <img src="./images/prime.jpg" width="370" height="294" alt="Проект Prime">
+                    <h3 class="portfolio-content">Проект<span lang="en">Prime</span></h3>
+                    <p class="portfolio-content-description">Маркетинг</p>
+                </li>
+                <li> <img src="./images/boxes.jpg" width="370" height="294" alt="Проект Boxes">
+                    <h3 class="portfolio-content">Проект<span lang="en">Boxes</span></h3>
+                    <p class="portfolio-content-description">Приложения</p>
+                </li>
+                <li> <img src="./images/inspirationpc.jpg" width="370" height="294" alt="Inspiration has no Borders">
+                    <h3 class="portfolio-content" lang="en">Inspiration has no Borders</h3>
+                    <p class="portfolio-content-description">Веб-сайт</p>
+                </li>
+                <li> <img src="./images/limitededition.jpg" width="370" height="294" alt="Издание Limited Edition">
+                    <h3 class="portfolio-content">Издание<span lang="en">Limited Edition</span></h3>
+                    <p class="portfolio-content-description">Дизайн</p>
+                </li>
+                <li>
+                    <img src="./images/lab.jpg" width="370" height="294" alt="Проект LAB Маркетинг">
+                    <h3 class="portfolio-content">Проект<span lang="en">LAB</span></h3>
+                    <p class="portfolio-content-description">Маркетинг</p>
+                </li>
+                <li><img src="./images/businesslaptop.jpg" width="370" height="294" alt="Growing Business">
+                    <h3 class="portfolio-content" lang="en">Growing Business</h3>
+                    <p class="portfolio-content-description">Приложение</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!--футер сайта-->
+    <footer class="footer">
+        <a class="homepage link" href="./index.html">Web<span class="homepage-light">Studio</span></a>
+        <address class="address">
+            <p class="map-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="list">
+                <li><a class="address-contact link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="address-contact link" href="tel:+38099-111-11-11">+38 99 111 11 11</a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

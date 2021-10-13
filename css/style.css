@@ -1,0 +1,218 @@
+:root {
+  --header-color: #ffffff;
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --background-text-color: #2196f3;
+  --background-color-one: #2f303a;
+  --background-color-two: #f5f4fa;
+  --third-text-color: #000000;
+  --four-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--header-color);
+  letter-spacing: 0.03em;
+}
+
+.header {
+  background-color: var(--header-color);
+}
+
+/* ссылка на главную страницу */
+.homepage {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--background-text-color);
+}
+
+.homepage-dark {
+  color: var(--third-text-color);
+}
+.homepage-light {
+  color: var(--header-color);
+}
+
+/* ссылки навигации */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list .link:focus {
+  color: var(--background-text-color);
+}
+
+.list .link:hover {
+  color: var(--background-text-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.link.current {
+  color: var(--background-text-color);
+}
+
+/* ссылки контактов */
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--second-text-color);
+  letter-spacing: 0.02em;
+}
+
+/* главное превью + ссылка для заказа */
+.main-page {
+  background-color: var(--background-color-one);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.main-page-topic {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+/* кнопка заказать услугу */
+.button-order {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--background-text-color);
+  color: var(--header-color);
+  border-radius: 4px;
+  border: none;
+}
+
+/* чем мы занимаемся */
+.our-qualities-topic {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+
+.our-qualities-description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+
+.what-we-do-topic {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+/* наша команда */
+.our-team {
+  background-color: var(--background-color-two);
+}
+
+.our-team-topic {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.our-team-person {
+  font-weight: 500;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+}
+
+.our-team-position {
+  line-height: 1.18;
+  color: var(--second-text-color);
+}
+
+/* футер */
+
+.footer {
+  background-color: var(--background-color-one);
+}
+
+.map-address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--header-color);
+}
+
+.address-contact {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--four-text-color);
+}
+
+/* портфолио */
+.btn {
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--primary-text-color);
+  border-radius: 4px;
+  border: none;
+}
+
+.portfolio-content {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: var(--header-color);
+  background-color: var(--background-text-color);
+}
+
+.portfolio-content-description {
+  line-height: 1.87;
+  color: var(--second-text-color);
+}
+
+/* hw3 желательно использовать outline или фон на элементах чтобы проверить 
+себя на факап 
+
+любой элемент который содержит текст размеры не должен иметь высоту*/
