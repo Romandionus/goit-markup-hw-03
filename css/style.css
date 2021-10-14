@@ -1,3 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+/* Есть внутри нормалайза */
+/* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+a {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 :root {
   --header-color: #ffffff;
   --primary-text-color: #212121;
@@ -20,13 +44,38 @@ body {
   background-color: var(--header-color);
 }
 
+.section-header {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: tomato;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ссылка на главную страницу */
 .homepage {
+  display: inline-block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--background-text-color);
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.section-nav {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 93px;
+}
+.section-link {
+  margin-bottom: 50px;
+}
+
+.section-link:last-child {
+  margin-bottom: 0;
 }
 
 .homepage-dark {
@@ -40,6 +89,9 @@ body {
 
 .list {
   list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .link {
@@ -75,9 +127,16 @@ body {
   letter-spacing: 0.02em;
 }
 
+.section-contacts {
+  margin-left: 331px;
+}
+
 /* главное превью + ссылка для заказа */
 .main-page {
   background-color: var(--background-color-one);
+  text-align: center;
+  padding-bottom: 280px;
+  padding-top: 200px;
 }
 
 .visually-hidden {
@@ -97,7 +156,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--header-color);
@@ -113,6 +171,7 @@ body {
   color: var(--header-color);
   border-radius: 4px;
   border: none;
+  margin-top: 30px;
 }
 
 /* чем мы занимаемся */
