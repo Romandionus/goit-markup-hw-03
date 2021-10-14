@@ -69,6 +69,8 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .homepage {
   display: inline-block;
@@ -151,6 +153,11 @@ body {
   background-color: var(--background-color-one);
 }
 
+.main-page-container {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -175,6 +182,8 @@ body {
 
 /* кнопка заказать услугу */
 .button-order {
+  min-width: 200px;
+  height: 50px;
   cursor: pointer;
   font-weight: 700;
   line-height: 1.87;
@@ -183,21 +192,40 @@ body {
   color: var(--header-color);
   border-radius: 4px;
   border: none;
+  margin-top: 30px;
 }
 
 /* чем мы занимаемся */
+.our-qualities-container {
+  display: flex;
+  min-width: 270px;
+  height: 101px;
+  margin-bottom: 94px;
+  justify-content: space-between;
+}
+
 .our-qualities-topic {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.our-qualities-container-item {
+  margin-right: 30px;
+}
+
+.our-qualities-container-item:last-child {
+  margin-right: 0;
 }
 
 .our-qualities-description {
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
+  display: inline-block;
 }
 
 .what-we-do-topic {
@@ -206,6 +234,17 @@ body {
   line-height: 1.16;
   color: var(--primary-text-color);
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.what-we-do-topic-list {
+  display: flex;
+}
+.what-we-do-topic-img {
+  margin-right: 30px;
+}
+.what-we-do-topic-img:last-child {
+  margin-right: 0;
 }
 
 /* наша команда */
