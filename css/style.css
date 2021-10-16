@@ -51,27 +51,24 @@ body {
   background-color: var(--header-color);
   letter-spacing: 0.03em;
 }
-
+/* -------------------Шапка сайта--------------------*/
 .header {
   background-color: var(--header-color);
 }
-
-/* -------------------Шапка сайта--------------------*/
 
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  /* background-color: lime; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
+
 .homepage {
   display: inline-block;
   font-family: Raleway;
@@ -79,6 +76,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--background-text-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .homepage-dark {
@@ -92,18 +91,28 @@ body {
 .header-nav {
   margin-left: 93px;
 }
-
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .menu-list {
   display: flex;
 }
 
 .menu-list-link {
+  display: inline-block;
   margin-right: 50px;
 }
 .menu-list-link:last-child {
   margin-right: 331px;
 }
 
+/* ----------------почта и телефон---------------- */
 .header-contacts-link {
   margin-right: 50px;
 }
@@ -127,14 +136,6 @@ body {
   color: var(--background-text-color);
 }
 
-.nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-
 .link.current {
   color: var(--background-text-color);
 }
@@ -146,18 +147,23 @@ body {
   line-height: 1.14;
   color: var(--second-text-color);
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* главное превью + ссылка для заказа */
 .main-page {
   background-color: var(--background-color-one);
+  border-top: 1px solid var(--second-text-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-page-container {
-  padding-top: 200px;
-  padding-bottom: 280px;
   text-align: center;
+  max-width: 696px;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -178,6 +184,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--header-color);
+
+  margin-bottom: 30px;
 }
 
 /* кнопка заказать услугу */
@@ -192,7 +200,6 @@ body {
   color: var(--header-color);
   border-radius: 4px;
   border: none;
-  margin-top: 30px;
 }
 
 /* чем мы занимаемся */
@@ -200,8 +207,9 @@ body {
   display: flex;
   min-width: 270px;
   height: 101px;
-  margin-bottom: 94px;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .our-qualities-topic {
@@ -214,18 +222,26 @@ body {
 }
 
 .our-qualities-container-item {
-  margin-right: 30px;
+  margin-left: 30px;
+  /* flex-basis: calc(100% / 4 - 30px); */
+  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
-.our-qualities-container-item:last-child {
-  margin-right: 0;
+.our-qualities-container-item:first-child {
+  margin-left: 0;
 }
 
 .our-qualities-description {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
   display: inline-block;
+  margin-bottom: 94px;
+}
+
+.what-we-do-pictures {
+  padding-top: 0px;
 }
 
 .what-we-do-topic {
@@ -262,27 +278,43 @@ body {
 
 .our-team-topic-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+.team-topic-description {
+  background-color: var(--header-color);
+  /* max-width: 100%; */
+  /* justify-content: center;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
 .our-team-topic-item {
-  display: block;
   margin-right: 30px;
   text-align: center;
+
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  outline: 2px solid lime;
+  margin-bottom: 10px;
 }
 .our-team-person {
   font-weight: 500;
   line-height: 1.18;
   color: var(--primary-text-color);
-  margin-top: 30px;
-  margin-bottom: 10px;
+  /* outline: 2px solid lime; */
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
-.our-team-topic-item:last-child {
-  margin-right: 0;
+.our-team-topic-item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .our-team-position {
   line-height: 1.18;
   color: var(--second-text-color);
+  padding-bottom: 30px;
 }
 
 /* футер */
