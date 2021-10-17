@@ -385,12 +385,21 @@ body {
 .btn-container-list {
   display: flex;
   justify-content: center;
-
   margin-bottom: 50px;
 }
 
-.active-btn:active {
+.active-btn:active,
+.active-btn:hover .active-btn:focus {
+  color: var(--header-color);
+  background-color: var(--background-text-color);
 }
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--background-text-color);
+  color: var(--header-color);
+}
+
 .btn-container-item {
   margin-right: 8px;
 }
@@ -398,6 +407,7 @@ body {
 .btn-container-item:last-child {
   margin-right: 0;
 }
+
 .portfolio-content {
   font-weight: 700;
   font-size: 18px;
@@ -429,11 +439,6 @@ body {
 }
 .container-list-filter-item:last-child {
   margin-right: 0;
-}
-.btn:hover,
-.btn:focus {
-  color: var(--header-color);
-  background-color: var(--background-text-color);
 }
 
 .portfolio-content-description {
