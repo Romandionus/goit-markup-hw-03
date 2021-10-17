@@ -43,6 +43,8 @@ ul {
   --background-color-two: #f5f4fa;
   --third-text-color: #000000;
   --four-text-color: rgba(255, 255, 255, 0.6);
+  --background-border-color-one: #eeeeee;
+  --background-border-color-two: #ececec;
 }
 
 body {
@@ -67,6 +69,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--background-border-color-two);
 }
 
 .homepage {
@@ -78,6 +81,15 @@ body {
   color: var(--background-text-color);
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.homepage-footer {
+  display: inline-block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--background-text-color);
 }
 
 .homepage-dark {
@@ -154,7 +166,7 @@ body {
 /* главное превью + ссылка для заказа */
 .main-page {
   background-color: var(--background-color-one);
-  border-top: 1px solid var(--second-text-color);
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -225,6 +237,8 @@ body {
   margin-left: 30px;
   /* flex-basis: calc(100% / 4 - 30px); */
   flex-basis: calc((100% - 4 * 30px) / 4);
+  max-width: 270px;
+  height: 101px;
 }
 
 .our-qualities-container-item:first-child {
@@ -288,6 +302,11 @@ body {
   /* justify-content: center;
   margin-left: auto;
   margin-right: auto; */
+  /* margin-top: 30px; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team-topic-item {
@@ -295,16 +314,14 @@ body {
   text-align: center;
 
   flex-basis: calc((100% - 4 * 30px) / 4);
-  outline: 2px solid lime;
-  margin-bottom: 10px;
+  /* outline: 2px solid lime; */
 }
 .our-team-person {
   font-weight: 500;
   line-height: 1.18;
   color: var(--primary-text-color);
   /* outline: 2px solid lime; */
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .our-team-topic-item:nth-child(4n) {
@@ -314,23 +331,23 @@ body {
 .our-team-position {
   line-height: 1.18;
   color: var(--second-text-color);
-  padding-bottom: 30px;
 }
 
 /* футер */
 
 .footer {
   background-color: var(--background-color-one);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-homepage-link {
   display: block;
-  padding-top: 60px;
+
   margin-bottom: 20px;
 }
 .address {
   text-align: left;
-  padding-bottom: 60px;
 }
 .map-address {
   font-size: 14px;
@@ -362,15 +379,20 @@ body {
   color: var(--primary-text-color);
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
 }
+
 .btn-container-list {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 
+.active-btn:active {
+}
 .btn-container-item {
   margin-right: 8px;
-  margin-bottom: 50px;
 }
 
 .btn-container-item:last-child {
@@ -382,6 +404,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .container-list-filter {
@@ -390,24 +413,25 @@ body {
   margin-right: -30px;
   margin-bottom: -30px;
 }
-.container-list-filter-item-description {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
+
 .container-list-filter-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
-  margin-bottom: -30px;
+  margin-bottom: 30px;
+  outline: 1px solid var(--background-border-color-one);
+}
+.container-list-filter-item-description {
+  padding-top: 20px;
+
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .container-list-filter-item:last-child {
   margin-right: 0;
 }
 .btn:hover,
-.btn:focus,
-.btn:active {
+.btn:focus {
   color: var(--header-color);
   background-color: var(--background-text-color);
 }
