@@ -14,6 +14,10 @@ img {
   max-width: 100%;
 }
 
+/* плохая идея лучше через классы a {
+  display: block;
+} */
+
 p,
 h1,
 h2,
@@ -100,9 +104,9 @@ body {
 }
 
 /* ------------------кнопки навигации --------------------*/
-.header-nav {
+/* .header-nav {
   margin-left: 93px;
-}
+} */
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -115,13 +119,17 @@ body {
 .menu-list {
   display: flex;
 }
+.menu-list-nav {
+  margin-left: 93px;
+  margin-right: 331px;
+}
 
 .menu-list-link {
   display: inline-block;
   margin-right: 50px;
 }
 .menu-list-link:last-child {
-  margin-right: 331px;
+  margin-right: 0px;
 }
 
 /* ----------------почта и телефон---------------- */
@@ -154,6 +162,7 @@ body {
 
 /* ссылки контактов */
 .contact-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -251,7 +260,6 @@ body {
   line-height: 1.71;
   color: var(--second-text-color);
   display: inline-block;
-  margin-bottom: 94px;
 }
 
 .what-we-do-pictures {
@@ -430,16 +438,16 @@ body {
   margin-bottom: 30px;
   outline: 1px solid var(--background-border-color-one);
 }
+
 .container-list-filter-item-description {
   padding-top: 20px;
-
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
-.container-list-filter-item:last-child {
+/* .container-list-filter-item:last-child {
   margin-right: 0;
-}
+} */
 
 .portfolio-content-description {
   line-height: 1.87;
