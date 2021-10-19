@@ -2,21 +2,10 @@ html {
   box-sizing: border-box;
 }
 
-/* Есть внутри нормалайза */
-/* *,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
-
 img {
   display: block;
   max-width: 100%;
 }
-
-/* плохая идея лучше через классы a {
-  display: block;
-} */
 
 p,
 h1,
@@ -57,9 +46,11 @@ body {
   background-color: var(--header-color);
   letter-spacing: 0.03em;
 }
+
 /* -------------------Шапка сайта--------------------*/
 .header {
   background-color: var(--header-color);
+  border-bottom: 1px solid var(--background-border-color-two);
 }
 
 .container {
@@ -73,7 +64,6 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--background-border-color-two);
 }
 
 .homepage {
@@ -85,6 +75,7 @@ body {
   color: var(--background-text-color);
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .homepage-footer {
@@ -104,10 +95,11 @@ body {
 }
 
 /* ------------------кнопки навигации --------------------*/
-/* .header-nav {
-  margin-left: 93px;
-} */
+.header-nav {
+  margin-right: auto;
+}
 .nav-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -118,10 +110,6 @@ body {
 }
 .menu-list {
   display: flex;
-}
-.menu-list-nav {
-  margin-left: 93px;
-  margin-right: 331px;
 }
 
 .menu-list-link {
@@ -175,7 +163,6 @@ body {
 /* главное превью + ссылка для заказа */
 .main-page {
   background-color: var(--background-color-one);
-
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -205,7 +192,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--header-color);
-
   margin-bottom: 30px;
 }
 
@@ -226,10 +212,6 @@ body {
 /* чем мы занимаемся */
 .our-qualities-container {
   display: flex;
-  min-width: 270px;
-  height: 101px;
-  justify-content: space-between;
-
   flex-wrap: wrap;
 }
 
@@ -244,10 +226,7 @@ body {
 
 .our-qualities-container-item {
   margin-left: 30px;
-  /* flex-basis: calc(100% / 4 - 30px); */
-  flex-basis: calc((100% - 4 * 30px) / 4);
-  max-width: 270px;
-  height: 101px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .our-qualities-container-item:first-child {
@@ -301,7 +280,7 @@ body {
 .our-team-topic-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .team-topic-description {
@@ -320,15 +299,13 @@ body {
 .our-team-topic-item {
   margin-right: 30px;
   text-align: center;
-
-  flex-basis: calc((100% - 4 * 30px) / 4);
-  /* outline: 2px solid lime; */
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
+
 .our-team-person {
   font-weight: 500;
   line-height: 1.18;
   color: var(--primary-text-color);
-  /* outline: 2px solid lime; */
   margin-bottom: 10px;
 }
 
@@ -396,8 +373,7 @@ body {
   margin-bottom: 50px;
 }
 
-.active-btn:active,
-.active-btn:hover .active-btn:focus {
+.active-btn {
   color: var(--header-color);
   background-color: var(--background-text-color);
 }
